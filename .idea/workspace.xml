@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="JacksonのObjectMapperを利用した方式の実装">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/GsonObjectMapperPersonSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/GsonObjectMapperPersonSearchServiceSpec.groovy" afterDir="false" />
+    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="GsonのObjectMapperを利用した方式の実装">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/GsonStreamingPersonSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/JacksonStreamingPersonSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/GsonStreamingPersonSearchServiceSpec.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/JacksonStreamingPersonSearchServiceSpec.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655748449702</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GsonのObjectMapperを利用した方式の実装">
+      <created>1655749856665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655749856665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,7 +200,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JSONテストデータの取得部分の実装" />
     <MESSAGE value="JacksonのObjectMapperを利用した方式の実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="JacksonのObjectMapperを利用した方式の実装" />
+    <MESSAGE value="GsonのObjectMapperを利用した方式の実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="GsonのObjectMapperを利用した方式の実装" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
