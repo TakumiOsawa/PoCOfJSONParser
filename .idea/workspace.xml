@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="JSONテストデータの取得部分の実装">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/IPersonSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/JacksonObjectMapperPersonSearchServiceSpec.groovy" afterDir="false" />
+    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="JacksonのObjectMapperを利用した方式の実装">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/GsonObjectMapperPersonSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/GsonObjectMapperPersonSearchServiceSpec.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/FileJSONDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/FileJSONDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IJSONDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/IJSONDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/FileJSONDataRepositorySpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/FileJSONDataRepositorySpec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,14 @@
       <recent name="repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JacksonObjectMapperPersonSearchServiceSpec.#idでJSONデータを検索した時の結果が#resultであること">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="PoCOfJSONParser.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileJSONDataRepositorySpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PoCOfJSONParser.test" />
       <extension name="coverage">
@@ -125,21 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileJSONDataRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PoCOfJSONParser.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="repository" />
-      <option name="MAIN_CLASS_NAME" value="repository.FileJSONDataRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JacksonObjectMapperPersonSearchServiceSpec.#idでJSONデータを検索した時の結果が#resultであること" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PoCOfJSONParser.test" />
       <extension name="coverage">
@@ -158,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.JacksonObjectMapperPersonSearchServiceSpec.#idでJSONデータを検索した時の結果が#resultであること" />
         <item itemvalue="JUnit.FileJSONDataRepositorySpec.resourcesのJSONファイルからテストデータを取得できる" />
         <item itemvalue="JUnit.FileJSONDataRepositorySpec" />
         <item itemvalue="JUnit.FileJSONDataRepositorySpec.FileJSONDataRepositoryを作成できる" />
-        <item itemvalue="JUnit.FileJSONDataRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655653158066</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JacksonのObjectMapperを利用した方式の実装">
+      <created>1655748449702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655748449702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JSONテストデータの取得部分の実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONテストデータの取得部分の実装" />
+    <MESSAGE value="JacksonのObjectMapperを利用した方式の実装" />
+    <option name="LAST_COMMIT_MESSAGE" value="JacksonのObjectMapperを利用した方式の実装" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,7 +13,7 @@ import java.util.List;
  * @author Takumi Osawa
  */
 public class JacksonObjectMapperPersonSearchService implements IPersonSearchService {
-    static ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper mapper = new ObjectMapper();
 
     /**
      * 人物一覧から特定の人物を探し出す
