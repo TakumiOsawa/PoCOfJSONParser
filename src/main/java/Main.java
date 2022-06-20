@@ -1,5 +1,8 @@
-import repository.FileJSONDataRepository;
-import repository.IJSONDataRepository;
+import domain.model.Person;
+import domain.repository.FileJSONDataRepository;
+import domain.repository.IJSONDataRepository;
+import service.IPersonSearchService;
+import service.JacksonObjectMapperPersonSearchService;
 
 /**
  * @author Takumi Osawa
@@ -9,6 +12,14 @@ public class Main {
         String pathOfResource = "/testData.json";
         IJSONDataRepository repository = new FileJSONDataRepository(pathOfResource);
         String data = repository.get();
-        System.out.println(data);
+
+        IPersonSearchService jacksonObjectMapper = new JacksonObjectMapperPersonSearchService();
+
+        long start = System.currentTimeMillis();
+        Person target = jacksonObjectMapper.search("62af330633189062cf3e40bf", data);
+        long end = System.currentTimeMillis();
+
+        System.out.println(target);
+        System.out.println((end - start) + "ms");
     }
 }

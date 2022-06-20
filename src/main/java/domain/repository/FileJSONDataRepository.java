@@ -1,4 +1,4 @@
-package repository;
+package domain.repository;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 /**
  * JSONファイルからJSONデータを取得するリポジトリ
+ *
  * @author Takumi Osawa
  */
 public class FileJSONDataRepository implements IJSONDataRepository {
@@ -14,6 +15,7 @@ public class FileJSONDataRepository implements IJSONDataRepository {
 
     /**
      * コンストラクタ
+     *
      * @param pathOfResource resources内のjsonファイルパス
      */
     public FileJSONDataRepository(String pathOfResource) {
@@ -22,6 +24,7 @@ public class FileJSONDataRepository implements IJSONDataRepository {
 
     /**
      * JSONデータを取得する
+     *
      * @return JSONデータ文字列。取得に失敗した場合はnull。
      */
     @Override
@@ -32,13 +35,12 @@ public class FileJSONDataRepository implements IJSONDataRepository {
             assert inputStream != null;
             try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream))) {
                 String content = bufferedReader.readLine();
-                while(content != null) {
+                while (content != null) {
                     stringBuilder.append(content).append(System.getProperty("line.separator"));
                     content = bufferedReader.readLine();
                 }
             }
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
 

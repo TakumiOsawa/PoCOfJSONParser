@@ -1,5 +1,6 @@
 package repository
 
+import domain.repository.FileJSONDataRepository
 import spock.lang.Specification
 
 class FileJSONDataRepositorySpec extends Specification {
