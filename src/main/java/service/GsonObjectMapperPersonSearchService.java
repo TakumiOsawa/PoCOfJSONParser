@@ -27,7 +27,7 @@ public class GsonObjectMapperPersonSearchService implements IPersonSearchService
         List<Person> people = gson.fromJson(source, new TypeToken<List<Person>>() {
         }.getType());
         return people.stream()
-                .filter(it -> id.equals(it.get_id()))
+                .filter(it -> id.equals(it.getId()))
                 .findFirst()
                 .orElse(null);
     }

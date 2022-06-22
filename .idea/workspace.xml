@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="GsonのObjectMapperを利用した方式の実装">
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/GsonStreamingPersonSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/JacksonStreamingPersonSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/GsonStreamingPersonSearchServiceSpec.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/JacksonStreamingPersonSearchServiceSpec.groovy" afterDir="false" />
+    <list default="true" id="91060fcf-eba0-4cc5-b16a-60ee95fb9707" name="Changes" comment="残りの方式の雛型の作成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GsonObjectMapperPersonSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GsonObjectMapperPersonSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JacksonObjectMapperPersonSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/JacksonStreamingPersonSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/JacksonStreamingPersonSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testData.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <recent name="repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="アプリケーション.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PoCOfJSONParser.main" />
@@ -145,7 +146,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.JacksonObjectMapperPersonSearchServiceSpec.#idでJSONデータを検索した時の結果が#resultであること" />
         <item itemvalue="JUnit.FileJSONDataRepositorySpec.resourcesのJSONファイルからテストデータを取得できる" />
         <item itemvalue="JUnit.FileJSONDataRepositorySpec" />
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655749856665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="残りの方式の雛型の作成">
+      <created>1655750413311</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655750413311</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +208,8 @@
     <MESSAGE value="JSONテストデータの取得部分の実装" />
     <MESSAGE value="JacksonのObjectMapperを利用した方式の実装" />
     <MESSAGE value="GsonのObjectMapperを利用した方式の実装" />
-    <option name="LAST_COMMIT_MESSAGE" value="GsonのObjectMapperを利用した方式の実装" />
+    <MESSAGE value="残りの方式の雛型の作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="残りの方式の雛型の作成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

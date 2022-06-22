@@ -26,12 +26,12 @@ public class Person {
     @Setter
     @ToString
     public static class Friend {
-        private int id;
+        private int friendId;
         private String name;
     }
 
     @Getter
-    private String _id;
+    private String id;
     private int index;
     private String guid;
     @JsonProperty("isActive")

@@ -28,7 +28,7 @@ public class JacksonObjectMapperPersonSearchService implements IPersonSearchServ
             List<Person> people = mapper.readValue(source, new TypeReference<>() {
             });
             return people.stream()
-                    .filter(it -> id.equals(it.get_id()))
+                    .filter(it -> id.equals(it.getId()))
                     .findFirst()
                     .orElse(null);
         } catch (JsonProcessingException ex) {
