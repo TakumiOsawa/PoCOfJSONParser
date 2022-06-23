@@ -61,8 +61,8 @@ public class JacksonStreamingPersonSearchService implements IPersonSearchService
         int startOffsetOfTarget = 0;
         int endOffsetOfTarget = 0;
 
-        boolean foundIDField = false;
-        boolean foundTargetID = false;
+        boolean foundIdField = false;
+        boolean foundTargetId = false;
 
         do {
             token = jsonParser.nextToken();
@@ -78,7 +78,7 @@ public class JacksonStreamingPersonSearchService implements IPersonSearchService
                 }
                 case END_OBJECT -> {
                     --insideObjectCount;
-                    if (foundTargetID && insideObjectCount == 0) {
+                    if (foundTargetId && insideObjectCount == 0) {
                         //対象データを見つけたら、JSONデータ文字列をPersonインスタンスに変換して返す
                         endOffsetOfTarget =
                                 Math.toIntExact(jsonParser.getCurrentLocation().getCharOffset());
@@ -94,16 +94,16 @@ public class JacksonStreamingPersonSearchService implements IPersonSearchService
                         continue;
                     }
 
-                    if (!foundIDField) {
+                    if (!foundIdField) {
                         if (fieldName.equals("id")) {
-                            foundIDField = true;
+                            foundIdField = true;
                         }
                     } else {
                         String idValue = jsonParser.getText();
                         if (idValue.equals(id)) {
-                            foundTargetID = true;
+                            foundTargetId = true;
                         }
-                        foundIDField = false;
+                        foundIdField = false;
                     }
                 }
             }

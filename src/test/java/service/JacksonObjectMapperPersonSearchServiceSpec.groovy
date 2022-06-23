@@ -7,7 +7,7 @@ import spock.lang.Unroll
 
 class JacksonObjectMapperPersonSearchServiceSpec extends Specification {
     @Unroll
-    def "#idでJSONデータを検索した時の結果が#resultであること"() {
+    def "#idでJSONデータを検索した時の結果==nullの評価値が#resultであること"() {
         setup:
         def pathOfResource = "/testData.json"
         def repository = new FileJSONDataRepository(pathOfResource)
@@ -19,7 +19,7 @@ class JacksonObjectMapperPersonSearchServiceSpec extends Specification {
 
         where:
         id                         || result
-        "62af330633189062cf3e40bf" || true
+        "62b35772c6ec3db35156e227" || true
         null                       || false
         ""                         || false
     }
